@@ -1,0 +1,18 @@
+﻿@model List<ExercicePokemon.Models.Pokemon>
+
+@{
+    Layout = "_Layout";
+}
+
+
+
+<h1 class="mb-5">@ViewData["description"]</h1>
+@foreach (var item in Model)
+{
+    <a href="~/pokemon/consulter/@(item.Id)">
+        <div class="pokemon@(item.Legendaire == true ? " legendaire" : "")">
+            <img src="/images/pokemon/@(item.Id).png" alt="Image du pokémon" /><br />
+            @item.Nom
+        </div>
+    </a>
+}

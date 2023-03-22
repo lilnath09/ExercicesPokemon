@@ -1,0 +1,63 @@
+﻿@model ExercicePokemon.Models.Pokemon
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="row">
+    <div class="col">
+
+        <h1 class="text-uppercase">@Model.Nom</h1>
+        <img src="/images/pokemon/@(Model.Id).png" width="125" /><br />
+        Id : @Model.Id  <br />
+        Nom : @Model.Nom <br />
+        Type : @Model.TypePrimaire
+        @if (Model.TypeSecondaire != "")
+        {
+            <span>et @Model.TypeSecondaire</span>
+        }
+        <br />
+        @if (Model.Legendaire)
+        {
+            <span>EST UN POKÉMON LÉGENDAIRE</span>
+        }
+        <br />
+        <br />
+        @Model.Description
+    </div>
+    <div class="col">
+        <h2 class="text-uppercase">Statistiques</h2>
+        HP : @Model.HP <br />
+        Vitesse : @Model.Vitesse <br />
+        Total : @Model.Total  <br />
+        <h2 class="my-5 text-uppercase">Attaque/Défence</h2>
+        <table id="tableauStatistique" class="table">
+            <thead>
+                <tr>
+                    <th class="transparent"></th>
+                    <th class="couleurDark">Attaque</th>
+                    <th class="couleurDark">Défence</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="couleurDark">De base</td>
+                    <td>@Model.Attaque</td>
+                    <td>@Model.Defense</td>
+                </tr>
+                <tr>
+                    <td class="couleurDark">Spécial</td>
+                    <td>@Model.SpecialAttaque</td>
+                    <td>@Model.SpecialDefense</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col text-center">
+        <a href="/pokemon/" class="btn btn-primary">Retour</a>
+    </div>
+</div>

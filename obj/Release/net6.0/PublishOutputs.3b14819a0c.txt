@@ -1,0 +1,9 @@
+C:\Users\ThinkPad\Desktop\ExercicesPokemon\obj\Release\net6.0\PubTmp\Out\ExercicesPokemon.exe
+C:\Users\ThinkPad\Desktop\ExercicesPokemon\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\ThinkPad\Desktop\ExercicesPokemon\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\ThinkPad\Desktop\ExercicesPokemon\obj\Release\net6.0\PubTmp\Out\ExercicesPokemon.dll
+C:\Users\ThinkPad\Desktop\ExercicesPokemon\obj\Release\net6.0\PubTmp\Out\ExercicesPokemon.deps.json
+C:\Users\ThinkPad\Desktop\ExercicesPokemon\obj\Release\net6.0\PubTmp\Out\ExercicesPokemon.runtimeconfig.json
+C:\Users\ThinkPad\Desktop\ExercicesPokemon\obj\Release\net6.0\PubTmp\Out\ExercicesPokemon.pdb
+C:\Users\ThinkPad\Desktop\ExercicesPokemon\obj\Release\net6.0\PubTmp\Out\Faker.NETCore.dll
+C:\Users\ThinkPad\Desktop\ExercicesPokemon\obj\Release\net6.0\PubTmp\Out\de-DE\Faker.NETCore.resources.dll

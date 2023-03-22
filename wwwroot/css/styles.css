@@ -1,0 +1,63 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: "Comic Sans MS";
+}
+
+a:link,
+a:hover,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.20);
+    padding: 1em;
+    box-shadow: 0px 0px 85px 0px rgba(255,255,255,0.50);
+}
+
+.pokemon {
+    width: 150px;
+    height: 150px;
+    padding: 1px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.pokemon:hover {
+    background-color: rgba(30, 144, 255, 0.5);
+    border: 1px solid rgb(30, 144, 255);
+}
+
+#tableauStatistique th,
+#tableauStatistique td {
+    background-color: white;
+    border: 1px solid black
+}
+
+#tableauStatistique .transparent {
+    background-color: transparent;
+    border: transparent;
+}
+
+#tableauStatistique .couleurDark {
+    color:white;
+    background-color: rgba(80, 80, 80, 0.7);
+}
+
+.legendaire {
+    border: 1px solid rgba(168, 50, 84, 1);
+    background-color: rgba(168, 50, 84, 0.5);
+}
+
+.optionMenu {
+    display: inline-block;
+    margin: 1em;
+    padding: 0.5em;
+    border: solid white 1px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.25);
+}

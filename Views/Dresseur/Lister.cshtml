@@ -1,0 +1,70 @@
+﻿@using System.Linq; 
+@model IEnumerable<ExercicePokemon.Models.Dresseur>
+
+
+@{
+    Layout = "_Layout";
+}
+
+
+<h1>Liste des dresseurs</h1>
+
+<table class="table table-light">
+    <thead class="thead-light">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Nom
+            </th>
+            <th>
+                Image
+            </th>
+            <th>
+                Arèna
+            </th>
+            <th>
+                Type spécialisé
+            </th>
+            <th>...</th>
+            <th>...</th>
+            <th>...</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.Nom
+                </td>
+                <td>
+                    <img src="@item.Image" style="max-width:100px;" />
+                </td>
+                <td>
+                    @item.Arena
+                </td>
+                <td>
+                    @item.TypeSpecialisé
+                </td>
+                <td>
+                    @item.PokemonsDresseur.Count()
+                </td>
+                <td>
+                    @item.PokemonsDresseur.Average(p => p.Pokemon.Attaque)
+                </td>
+                <td>
+                    @item.PokemonsDresseur.Average(p => p.Pokemon.Defense)
+                </td>
+                <td>
+                    <a href="/dresseur/consulter/@item.Id" class="btn btn-primary">Consulter</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

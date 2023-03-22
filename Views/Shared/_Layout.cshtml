@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <title>Pokémon</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col text-center">
+                <img src="~/images/logo.png" class="img-fluid" /><br />
+                <a class="optionMenu" href="/pokemon">Liste des pokémons</a>
+                <a class="optionMenu" href="/dresseur">Liste des dresseurs</a>
+                <a class="optionMenu" href="/divers/menu">Diverses informations</a>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col pt-3" id="ContenuDuRenderBody">
+                @RenderBody()
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
